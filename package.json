@@ -1,0 +1,29 @@
+{
+  "name": "cdk-stack-ttl",
+  "version": "1.0.0",
+  "description": "Automatically remove stacks in CDK after their TTL expires",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-events": "1.108.1",
+    "@aws-cdk/aws-events-targets": "1.108.1",
+    "@aws-cdk/aws-iam": "1.108.1",
+    "@aws-cdk/aws-lambda": "1.108.1",
+    "@aws-cdk/core": "1.108.1",
+    "aws-cdk": "1.108.1",
+    "moment": "2.29.1",
+    "ts-node": "10.0.0",
+    "typescript": "4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "15.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "cdk deploy"
+  },
+  "author": "Sebastian Schlecht",
+  "license": "MIT"
+}
