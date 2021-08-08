@@ -2,27 +2,27 @@ const {
   AwsCdkConstructLibrary,
   NodePackageManager,
   ProjectType,
-} = require("projen");
+} = require('projen');
 const project = new AwsCdkConstructLibrary({
-  author: "Sebastian Schlecht",
-  authorAddress: "sebastian.schlecht@capmo.de",
-  cdkVersion: "1.95.2",
-  defaultReleaseBranch: "main",
-  name: "@capmo/cdk-stack-ttl",
+  author: 'Sebastian Schlecht',
+  authorAddress: 'sebastian.schlecht@capmo.de',
+  cdkVersion: '1.95.2',
+  defaultReleaseBranch: 'main',
+  name: '@capmo/cdk-stack-ttl',
   packageManager: NodePackageManager.NPM,
-  npmRegistryUrl: "https://npm.pkg.github.com",
-  npmTokenSecret: "GITHUB_TOKEN",
-  repositoryUrl: "git@github.com:capmo/cdk-stack-ttl.git",
+  npmRegistryUrl: 'https://npm.pkg.github.com',
+  npmTokenSecret: 'GITHUB_TOKEN',
+  repositoryUrl: 'git@github.com:capmo/cdk-stack-ttl.git',
 
   cdkDependencies: [
-    "@aws-cdk/core",
-    "@aws-cdk/aws-lambda",
-    "@aws-cdk/aws-events",
-    "@aws-cdk/aws-events-targets",
-    "@aws-cdk/aws-iam",
+    '@aws-cdk/core',
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-events',
+    '@aws-cdk/aws-events-targets',
+    '@aws-cdk/aws-iam',
   ] /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */,
   cdkTestDependencies: [
-    "@aws-cdk/assert",
+    '@aws-cdk/assert',
   ] /* AWS CDK modules required for testing. */,
   // deps: [] /* Runtime dependencies of this module. */,
   // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */
