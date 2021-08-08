@@ -120,6 +120,10 @@
       "type": "peer"
     },
     {
+      "name": "moment",
+      "type": "peer"
+    },
+    {
       "name": "@aws-cdk/aws-events-targets",
       "version": "^1.95.2",
       "type": "runtime"
