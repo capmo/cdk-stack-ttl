@@ -5,12 +5,13 @@ const {
 } = require('projen');
 const project = new AwsCdkConstructLibrary({
   author: 'Sebastian Schlecht',
-  authorAddress: 'mail@sebastian-schlecht.de',
+  authorAddress: 'sebastian.schlecht@capmo.de',
   cdkVersion: '1.95.2',
   defaultReleaseBranch: 'main',
-  name: 'cdk-stack-ttl',
+  name: '@capmo/cdk-stack-ttl',
   packageManager: NodePackageManager.NPM,
-  repositoryUrl: 'git@github.com:sebastian-schlecht/cdk-stack-ttl.git',
+  npmRegistryUrl: 'https://npm.pkg.github.com',
+  repositoryUrl: 'git@github.com:capmo/cdk-stack-ttl.git',
 
   cdkDependencies: [
     '@aws-cdk/core',

@@ -1,8 +1,8 @@
 {
-  "name": "cdk-stack-ttl",
+  "name": "@capmo/cdk-stack-ttl",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sebastian-schlecht/cdk-stack-ttl.git"
+    "url": "git@github.com:capmo/cdk-stack-ttl.git"
   },
   "scripts": {
     "clobber": "npx projen clobber",
@@ -28,7 +28,7 @@
   },
   "author": {
     "name": "Sebastian Schlecht",
-    "email": "mail@sebastian-schlecht.de",
+    "email": "sebastian.schlecht@capmo.de",
     "organization": false
   },
   "devDependencies": {
@@ -75,6 +75,9 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [

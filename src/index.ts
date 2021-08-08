@@ -6,7 +6,7 @@ import { Stack, Construct } from '@aws-cdk/core';
 
 import { cronExpression } from './utils';
 
-interface ITTLProps {
+export interface ITtlProps {
   ttl: number;
 }
 
@@ -29,8 +29,8 @@ def handler(event, context):
     return delete_cfn(stack_name)
 `;
 
-export class TTL extends Construct {
-  constructor(scope: Construct, id: string, props: ITTLProps) {
+export class Ttl extends Construct {
+  constructor(scope: Construct, id: string, props: ITtlProps) {
     super(scope, id);
 
     const stack = Stack.of(this);

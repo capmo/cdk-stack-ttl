@@ -227,7 +227,7 @@
       "description": "Publish this package to the npm Registry",
       "env": {
         "NPM_DIST_TAG": "latest",
-        "NPM_REGISTRY": "registry.npmjs.org"
+        "NPM_REGISTRY": "npm.pkg.github.com"
       },
       "requiredEnv": [
         "NPM_TOKEN"

@@ -1,13 +1,13 @@
 import { expect, countResources } from '@aws-cdk/assert';
 import { App, Stack } from '@aws-cdk/core';
 
-import { TTL } from '../src';
+import { Ttl } from '../src';
 
 test('TTL', () => {
   const app = new App();
   const stack = new Stack(app, 'TestStack');
 
-  new TTL(stack, 'stack-ttl', {
+  new Ttl(stack, 'stack-ttl', {
     ttl: 60,
   });
 

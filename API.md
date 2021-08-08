@@ -1,28 +1,53 @@
 # API Reference <a name="API Reference"></a>
 
+## Constructs <a name="Constructs"></a>
 
+### Ttl <a name="@capmo/cdk-stack-ttl.Ttl"></a>
 
-## Classes <a name="Classes"></a>
-
-### Hello <a name="cdk-stack-ttl.Hello"></a>
-
-#### Initializer <a name="cdk-stack-ttl.Hello.Initializer"></a>
+#### Initializer <a name="@capmo/cdk-stack-ttl.Ttl.Initializer"></a>
 
 ```typescript
-import { Hello } from 'cdk-stack-ttl'
+import { Ttl } from '@capmo/cdk-stack-ttl'
 
-new Hello()
+new Ttl(scope: Construct, id: string, props: ITtlProps)
 ```
 
-#### Methods <a name="Methods"></a>
+##### `scope`<sup>Required</sup> <a name="@capmo/cdk-stack-ttl.Ttl.parameter.scope"></a>
 
-##### `sayHello` <a name="cdk-stack-ttl.Hello.sayHello"></a>
+- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
-```typescript
-public sayHello()
-```
+---
+
+##### `id`<sup>Required</sup> <a name="@capmo/cdk-stack-ttl.Ttl.parameter.id"></a>
+
+- *Type:* `string`
+
+---
+
+##### `props`<sup>Required</sup> <a name="@capmo/cdk-stack-ttl.Ttl.parameter.props"></a>
+
+- *Type:* [`@capmo/cdk-stack-ttl.ITtlProps`](#@capmo/cdk-stack-ttl.ITtlProps)
+
+---
 
 
 
 
+
+
+
+## Protocols <a name="Protocols"></a>
+
+### ITtlProps <a name="@capmo/cdk-stack-ttl.ITtlProps"></a>
+
+- *Implemented By:* [`@capmo/cdk-stack-ttl.ITtlProps`](#@capmo/cdk-stack-ttl.ITtlProps)
+
+
+#### Properties <a name="Properties"></a>
+
+##### `ttl`<sup>Required</sup> <a name="@capmo/cdk-stack-ttl.ITtlProps.property.ttl"></a>
+
+- *Type:* `number`
+
+---
 

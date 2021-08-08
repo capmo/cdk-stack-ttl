@@ -10,13 +10,13 @@ Why would I want my stack to self-destruct after a while? There is plenty of rea
 
 ```typescript
 import { App, Stack, StackProps } from "@aws-cdk/core";
-import { TTL } from "cdk-stack-ttl";
+import { Ttl } from "cdk-stack-ttl";
 
 export class MyStack extends Stack {
   constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    new TTL(this, "stack-ttl", { ttl: 10 });
+    new Ttl(this, "stack-ttl", { ttl: 10 });
   }
 }
 ```
