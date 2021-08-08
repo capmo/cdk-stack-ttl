@@ -50,6 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      packages: write
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@v2
@@ -60,7 +61,7 @@ jobs:
         run: npx -p jsii-release@latest jsii-release-npm
         env:
           NPM_DIST_TAG: latest
-          NPM_REGISTRY: registry.npmjs.org
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_REGISTRY: npm.pkg.github.com
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     container:
       image: jsii/superchain
