@@ -1,6 +1,6 @@
 # 💥 CDK Stack TTL 💥
 
-This package contains a CDK construct that can be imported in order to automatically delete the stack after a certain timeframe (TTL). Inspired by [this blog post from AWS](https://aws.amazon.com/blogs/infrastructure-and-automation/scheduling-automatic-deletion-of-aws-cloudformation-stacks/).
+This package contains a CDK construct that can be imported in order to automatically delete the stack after a certain timeframe (TTL). Inspired by [this blog post from AWS](https://aws.amazon.com/blogs/infrastructure-and-automation/scheduling-automatic-deletion-of-aws-cloudformation-stacks/). Built with [projen](https://github.com/projen/projen).
 
 ## When to use
 
