@@ -8,9 +8,15 @@ const project = new AwsCdkConstructLibrary({
   packageManager: NodePackageManager.NPM,
   repositoryUrl: 'git@github.com:sebastian-schlecht/cdk-stack-ttl.git',
 
-  // cdkDependencies: undefined,        /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
+  cdkDependencies: [
+    '@aws-cdk/core',
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-events',
+    '@aws-cdk/aws-events-targets',
+    '@aws-cdk/aws-iam',
+  ] /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */,
   // cdkTestDependencies: undefined,    /* AWS CDK modules required for testing. */
-  // deps: [],                          /* Runtime dependencies of this module. */
+  deps: ['moment'] /* Runtime dependencies of this module. */,
   // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],                       /* Build dependencies for this module. */
   // packageName: undefined,            /* The "name" in package.json. */
