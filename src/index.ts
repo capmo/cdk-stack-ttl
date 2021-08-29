@@ -2,7 +2,7 @@ import { Rule, Schedule } from '@aws-cdk/aws-events';
 import { LambdaFunction } from '@aws-cdk/aws-events-targets';
 import { PolicyStatement } from '@aws-cdk/aws-iam';
 import { Function, Code, Runtime } from '@aws-cdk/aws-lambda';
-import { Stack, Construct } from '@aws-cdk/core';
+import { Stack, Construct, CfnOutput } from '@aws-cdk/core';
 
 import { cronExpression } from './utils';
 
@@ -44,8 +44,9 @@ export class Ttl extends Construct {
       },
     });
 
+    const cronExpirationSchedule = Schedule.expression(cronExpression(new Date(), props.ttl))
     const rule = new Rule(this, 'deletion-rule', {
-      schedule: Schedule.expression(cronExpression(new Date(), props.ttl)),
+      schedule: cronExpirationSchedule,
     });
 
     rule.addTarget(new LambdaFunction(lambdaFn));
@@ -58,5 +59,10 @@ export class Ttl extends Construct {
     );
 
     lambdaFn.addToRolePolicy(statement);
+
+    new CfnOutput(stack, 'Stack TTL cron', {
+      exportName: `${stack.stackName}-stack-ttl-cron`,
+      value: cronExpirationSchedule.expressionString,
+    });
   }
 }
