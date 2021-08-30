@@ -7,7 +7,7 @@ import { Stack, Construct, CfnOutput } from '@aws-cdk/core';
 import { cronExpression } from './utils';
 
 export interface ITtlProps {
-  ttl: number;
+  ttl: number;  // TTL is denoted in days
 }
 
 const fnCode = `
