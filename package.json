@@ -55,18 +55,19 @@
     "typescript": "^4.4.2"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-events": "^1.120.0",
-    "@aws-cdk/aws-events-targets": "^1.120.0",
-    "@aws-cdk/aws-iam": "^1.120.0",
-    "@aws-cdk/aws-lambda": "^1.120.0",
-    "@aws-cdk/core": "^1.120.0"
+    "@aws-cdk/aws-events": "^1.116.0",
+    "@aws-cdk/aws-events-targets": "^1.116.0",
+    "@aws-cdk/aws-iam": "^1.116.0",
+    "@aws-cdk/aws-lambda": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0",
+    "constructs": "^3.2.27"
   },
   "dependencies": {
-    "@aws-cdk/aws-events": "^1.120.0",
-    "@aws-cdk/aws-events-targets": "^1.120.0",
-    "@aws-cdk/aws-iam": "^1.120.0",
-    "@aws-cdk/aws-lambda": "^1.120.0",
-    "@aws-cdk/core": "^1.120.0"
+    "@aws-cdk/aws-events": "^1.116.0",
+    "@aws-cdk/aws-events-targets": "^1.116.0",
+    "@aws-cdk/aws-iam": "^1.116.0",
+    "@aws-cdk/aws-lambda": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0"
   },
   "bundledDependencies": [],
   "keywords": [

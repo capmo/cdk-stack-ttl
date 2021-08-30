@@ -7,7 +7,7 @@ import { Stack, Construct, CfnOutput } from '@aws-cdk/core';
 import { cronExpression } from './utils';
 
 export interface ITtlProps {
-  ttl: number;  // TTL is denoted in days
+  ttl: number; // TTL is denoted in days
 }
 
 const fnCode = `
@@ -44,7 +44,7 @@ export class Ttl extends Construct {
       },
     });
 
-    const cronExpirationSchedule = Schedule.expression(cronExpression(new Date(), props.ttl))
+    const cronExpirationSchedule = Schedule.expression(cronExpression(new Date(), props.ttl));
     const rule = new Rule(this, 'deletion-rule', {
       schedule: cronExpirationSchedule,
     });
