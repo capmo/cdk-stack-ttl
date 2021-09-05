@@ -4,7 +4,7 @@
 
 ### Ttl <a name="@capmo/cdk-stack-ttl.Ttl"></a>
 
-#### Initializer <a name="@capmo/cdk-stack-ttl.Ttl.Initializer"></a>
+#### Initializers <a name="@capmo/cdk-stack-ttl.Ttl.Initializer"></a>
 
 ```typescript
 import { Ttl } from '@capmo/cdk-stack-ttl'
