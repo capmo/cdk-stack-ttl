@@ -47,6 +47,10 @@ new Ttl(scope: Construct, id: string, props: ITtlProps)
 
 ##### `ttl`<sup>Required</sup> <a name="@capmo/cdk-stack-ttl.ITtlProps.property.ttl"></a>
 
+```typescript
+public readonly ttl: number;
+```
+
 - *Type:* `number`
 
 ---
