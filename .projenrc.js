@@ -6,7 +6,7 @@ const {
 const project = new AwsCdkConstructLibrary({
   author: 'Sebastian Schlecht',
   authorAddress: 'sebastian.schlecht@capmo.de',
-  cdkVersion: '1.116.0',
+  cdkVersion: '1.148.0',
   defaultReleaseBranch: 'main',
   name: '@capmo/cdk-stack-ttl',
   packageManager: NodePackageManager.NPM,
@@ -23,6 +23,7 @@ const project = new AwsCdkConstructLibrary({
   ] /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */,
   cdkTestDependencies: [
     '@aws-cdk/assert',
+    '@aws-cdk/assertions',
   ] /* AWS CDK modules required for testing. */,
   // deps: [] /* Runtime dependencies of this module. */,
   // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */
