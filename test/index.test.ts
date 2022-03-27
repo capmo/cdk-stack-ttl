@@ -1,4 +1,4 @@
-import { expect, countResources } from '@aws-cdk/assert';
+import { Template } from '@aws-cdk/assertions';
 import { App, Stack } from '@aws-cdk/core';
 
 import { Ttl } from '../src';
@@ -11,5 +11,7 @@ test('TTL', () => {
     ttl: 60,
   });
 
-  expect(stack).to(countResources('AWS::Lambda::Function', 1));
+  const template = Template.fromStack(stack);
+
+  template.resourceCountIs('AWS::Lambda::Function', 1);
 });
